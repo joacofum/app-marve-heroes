@@ -6,6 +6,7 @@ import { HeroeModule } from './heroe/heroe.module';
 
 @Module({
   imports: [
+    HeroeModule,
     // Configuración de variables de entorno
     ConfigModule,
     ConfigModule.forRoot({
@@ -41,6 +42,6 @@ import { HeroeModule } from './heroe/heroe.module';
     }),
   ],
   controllers: [],
-  providers: [HeroeModule],
+  providers: [],
 })
 export class AppModule {}
