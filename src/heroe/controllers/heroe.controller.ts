@@ -22,7 +22,7 @@ export class HeroeController {
   async findAll(
     @Param('count', ParseIntPipe) count: number,
     @Param('page', ParseIntPipe) page: number,
-  ): Promise<Array<object>> {
+  ) {
     const heroes = await this.marvelHeroeService.getAllHeroes(count, page);
     return heroes;
   }
